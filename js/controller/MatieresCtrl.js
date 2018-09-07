@@ -6,7 +6,8 @@ app.controller('MatieresCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.searchFichiers = function(matiere, type){
         console.log("la focntion a bien été lancée");
         //var url = "https://desfichesdescartes.fr/appli/data.json";
-        var url = "https://desfichesdescartes.fr/appli/liste.php?matiere=" + matiere + "&type=" + type;
+        //var url = "https://desfichesdescartes.fr/appli/liste.php?matiere=" + matiere + "&type=" + type;
+		var url = "http://test.desfichesdescartes/appli/liste.php?matiere=" + matiere + "&type=" + type;
         $http.get(url).then(httpSuccessFichiers, function(error){
             alert("Impossible de récupérer la liste des fichiers");
         });
