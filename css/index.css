@@ -1,0 +1,191 @@
+body {
+    /*background-color: rgb(201, 233, 255);*/
+    /*background-color: white;*/
+    font-family: Roboto;
+    font-size: 14px;
+    /*-webkit-transform: translateZ(0);*/
+    /*-webkit-backface-visibility: hidden;*/
+    background-image: url("../img/fondApp.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.header {
+    position: absolute;
+    height: 60px;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: rgb(0, 125, 208);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 100px -10px #00000063;
+    -webkit-box-shadow: 0px 10px 100px -10px #00000063;
+    border-bottom: 1px solid #b1b1b1;
+    z-index: 9999;
+}
+
+.view {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 60px;
+    left: 0;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    transition-duration: 0.5s;
+}
+/*
+.panel-padding {
+    padding: 20px;
+}
+*/
+.nav {
+    position: absolute;
+    height: 60px;
+    line-height: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(0, 125, 208);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -5px 50px -5px #00000024;
+    -webkit-box-shadow: 0px -5px 50px -5px #00000024;
+    border-top: 1px solid #dcdcdc;
+
+    overflow: hidden;
+}
+
+.nav a {
+    display: block;
+    width: 100%;
+    float: left;
+    transition-duration: 0.5s;
+    font-size: 20px;
+    color: rgb(0, 125, 208);
+}
+
+
+
+
+.left {
+    transform: translate3D(-100%, 0, 0);
+}
+
+.center {
+    transform: translate3D(0, 0, 0);
+}
+
+.right {
+    transform: translate3D(100%, 0, 0);
+}
+
+
+
+.case {
+    width: fit-content;
+    /*background-color: white;*/
+    float: left;
+    width: 50%;
+}
+
+.miniature {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, 0.687), 0px 0px 2px 10px #00000014 inset;
+    -webkit-box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, 0.687), 0px 0px 2px 10px #00000014 inset;
+    padding: 1px;
+    border: 1px solid #8080802b;
+}
+
+.nomFichier {
+    font-size: large;
+    text-align: center;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    height: 60px;
+}
+
+.choixNiv {
+    color: rgb(72, 72, 72);
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* border-bottom: 1px solid rgb(182, 182, 182); */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.boutonNiveau {
+    border-radius: 100px;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+    display: block;
+    transition-duration: 0.5s;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.boutonMatiere:active {
+    background-color: black;
+    color: white;
+}
+
+.lotMatieres>a{
+    width: 90%;
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    transition-duration: 0.5;
+    border: 1px solid lightgray;
+}
+
+.lotMatieres>a:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.semestre {
+    /*text-align: center;*/
+    font-size: 45px;
+    font-weight: bolder;
+    color: #88cfff;
+    text-transform: capitalize;
+    margin: 20px;
+}
+
+.lotMatieres {
+    display: none;
+}
